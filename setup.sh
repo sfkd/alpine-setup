@@ -5,7 +5,7 @@ PUBKEY_URL=https://github.com/sfkd.keys
 
 # execute setup alpine with answer
 SWAP_SIZE=0
-wget -q -O - ${ANSWER_FILE_URL} | setup-alpine -f -
+wget -q -O - ${ANSWER_FILE_URL} | setup-alpine -f - -e
 
 # mount new environment
 mount /dev/sda2 /mnt
